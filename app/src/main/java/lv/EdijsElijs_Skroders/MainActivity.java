@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 String newCityName = cityText.getText().toString();
                 String url = "https://api.openweathermap.org/data/2.5/weather?q=" + newCityName +
-                        "&appid=3de2468b0382472c4bc6f2fe17542311";
+                        "&appid=3de2468b0382472c4bc6f2fe17542311&units=metric";
 
                 JsonObjectRequest request = new JsonObjectRequest(
                         Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
