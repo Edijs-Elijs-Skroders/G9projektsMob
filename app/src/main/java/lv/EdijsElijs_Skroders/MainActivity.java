@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         cityText = findViewById(R.id.city_name_text);
         temp = findViewById(R.id.temp);
         pressure = findViewById(R.id.pressure);
-        humidity = findViewById(R.id.humidity);
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
